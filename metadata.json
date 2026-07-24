@@ -1,0 +1,6 @@
+{
+  "name": "Autoplaza - Marketplace de Autos",
+  "description": "Marketplace de vehículos seminuevos, usados y 0 km estilo Mercado Libre Autos con catálogo completo, filtros avanzados, cotizador de financiamiento y contacto directo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

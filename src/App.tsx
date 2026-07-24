@@ -46,7 +46,7 @@ export default function App() {
 
   // Presentation Settings:
   const [presentationSettings, setPresentationSettings] = useState<PresentationSettings>({
-    showClientBar: true,
+    showClientBar: false,
     themeMode: 'mercado_libre_yellow',
     clientName: 'Grupo Automotriz Premier',
     customBrandColor: '#3483FA',
@@ -223,11 +223,13 @@ export default function App() {
     }`}>
       
       {/* Client Presentation Toolbar */}
-      <ClientPresentationBar
-        settings={presentationSettings}
-        onUpdateSettings={setPresentationSettings}
-        onOpenProposalModal={() => setIsProposalModalOpen(true)}
-      />
+      {presentationSettings.showClientBar && (
+        <ClientPresentationBar
+          settings={presentationSettings}
+          onUpdateSettings={setPresentationSettings}
+          onOpenProposalModal={() => setIsProposalModalOpen(true)}
+        />
+      )}
 
       {/* Main Yellow Header (Mercado Libre Style) */}
       <Header

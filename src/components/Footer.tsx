@@ -12,47 +12,47 @@ export const Footer: React.FC<FooterProps> = ({ themeMode }) => {
   return (
     <footer className="bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 text-gray-600 dark:text-gray-400 text-xs transition-colors">
       
-      {/* Top Value Badges Bar */}
-      <div className="bg-gray-50 dark:bg-slate-800/60 py-6 border-b border-gray-200 dark:border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {/* Top Value Badges Bar with Yellow Background Cards */}
+      <div className="bg-[#FFF159] py-6 border-b border-yellow-300 text-zinc-900">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600">
+          <div className="flex items-center gap-3 p-3 bg-[#FFE600] border border-yellow-400 rounded-lg shadow-2xs">
+            <div className="p-2.5 rounded-full bg-blue-600 text-white shadow-xs flex-shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-gray-900 dark:text-white text-xs">Compra Protegida</h4>
-              <p className="text-[11px] text-gray-500">Garantía mecánica y revisión legal completa.</p>
+              <h4 className="font-extrabold text-zinc-900 text-xs uppercase tracking-tight">Compra Protegida</h4>
+              <p className="text-[11px] text-zinc-800 font-medium">Garantía mecánica y revisión legal completa.</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-600">
+          <div className="flex items-center gap-3 p-3 bg-[#FFE600] border border-yellow-400 rounded-lg shadow-2xs">
+            <div className="p-2.5 rounded-full bg-emerald-600 text-white shadow-xs flex-shrink-0">
               <Lock className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-gray-900 dark:text-white text-xs">Datos Validados</h4>
-              <p className="text-[11px] text-gray-500">Inspección de VIN y sin reporte de robo.</p>
+              <h4 className="font-extrabold text-zinc-900 text-xs uppercase tracking-tight">Datos Validados</h4>
+              <p className="text-[11px] text-zinc-800 font-medium">Inspección de VIN y sin reporte de robo.</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-600">
+          <div className="flex items-center gap-3 p-3 bg-[#FFE600] border border-yellow-400 rounded-lg shadow-2xs">
+            <div className="p-2.5 rounded-full bg-purple-600 text-white shadow-xs flex-shrink-0">
               <Award className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-gray-900 dark:text-white text-xs">Agencias Certificadas</h4>
-              <p className="text-[11px] text-gray-500">Agencias automotrices con respaldo oficial.</p>
+              <h4 className="font-extrabold text-zinc-900 text-xs uppercase tracking-tight">Agencias Certificadas</h4>
+              <p className="text-[11px] text-zinc-800 font-medium">Agencias automotrices con respaldo oficial.</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-600">
+          <div className="flex items-center gap-3 p-3 bg-[#FFE600] border border-yellow-400 rounded-lg shadow-2xs">
+            <div className="p-2.5 rounded-full bg-zinc-900 text-white shadow-xs flex-shrink-0">
               <PhoneCall className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-gray-900 dark:text-white text-xs">Atención 24/7</h4>
-              <p className="text-[11px] text-gray-500">Asesoría telefónica y por WhatsApp.</p>
+              <h4 className="font-extrabold text-zinc-900 text-xs uppercase tracking-tight">Atención 24/7</h4>
+              <p className="text-[11px] text-zinc-800 font-medium">Asesoría telefónica y por WhatsApp.</p>
             </div>
           </div>
 

@@ -66,7 +66,7 @@ export const FinancingCalculatorModal: React.FC<FinancingCalculatorModalProps> =
                     step="10000"
                     value={carValue}
                     onChange={(e) => setCarValue(Number(e.target.value))}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-extrabold text-sm text-blue-600 dark:text-blue-400"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 font-extrabold text-sm text-blue-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
 

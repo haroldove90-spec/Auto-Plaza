@@ -146,16 +146,16 @@ export const PublishModal: React.FC<PublishModalProps> = ({
         </div>
 
         {/* Form Body */}
-        <div className="p-6 overflow-y-auto space-y-6 flex-1 text-gray-800 dark:text-gray-200">
+        <div className="p-6 overflow-y-auto space-y-6 flex-1 text-zinc-800">
           {!isPublished ? (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div>
-                  <label className="font-bold block mb-1">Marca *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Marca *</label>
                   <select
                     value={formData.brand}
                     onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   >
                     {BRANDS.map((b) => (
                       <option key={b} value={b}>{b}</option>
@@ -164,19 +164,19 @@ export const PublishModal: React.FC<PublishModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">Modelo *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Modelo *</label>
                   <input
                     type="text"
                     required
                     placeholder="Ej. Sentra, RAV4, Jetta..."
                     value={formData.model}
                     onChange={(e) => setFormData({ ...formData, model: e.target.value })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">Año *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Año *</label>
                   <input
                     type="number"
                     required
@@ -184,39 +184,39 @@ export const PublishModal: React.FC<PublishModalProps> = ({
                     max="2026"
                     value={formData.year}
                     onChange={(e) => setFormData({ ...formData, year: Number(e.target.value) })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">Precio ($ MXN) *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Precio ($ MXN) *</label>
                   <input
                     type="number"
                     required
                     step="5000"
                     value={formData.price}
                     onChange={(e) => setFormData({ ...formData, price: Number(e.target.value) })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">Kilometraje (km) *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Kilometraje (km) *</label>
                   <input
                     type="number"
                     required
                     value={formData.mileage}
                     onChange={(e) => setFormData({ ...formData, mileage: Number(e.target.value) })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">Tipo de Carrocería *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Tipo de Carrocería *</label>
                   <select
                     value={formData.bodyStyle}
                     onChange={(e) => setFormData({ ...formData, bodyStyle: e.target.value as BodyStyle })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   >
                     <option value="Sedán">Sedán</option>
                     <option value="SUV">SUV</option>
@@ -229,11 +229,11 @@ export const PublishModal: React.FC<PublishModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">Ubicación / Estado *</label>
+                  <label className="font-bold block mb-1 text-zinc-700">Ubicación / Estado *</label>
                   <select
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value, state: e.target.value })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   >
                     {LOCATIONS_MEXICO.map((loc) => (
                       <option key={loc} value={loc}>{loc}</option>
@@ -242,23 +242,23 @@ export const PublishModal: React.FC<PublishModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="font-bold block mb-1">URL Fotografía Principal</label>
+                  <label className="font-bold block mb-1 text-zinc-700">URL Fotografía Principal</label>
                   <input
                     type="text"
                     value={formData.imageUrl}
                     onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
-                    className="w-full p-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                    className="w-full p-2.5 rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="font-bold block mb-1 text-xs">Descripción Detallada</label>
+                <label className="font-bold block mb-1 text-xs text-zinc-700">Descripción Detallada</label>
                 <textarea
                   rows={3}
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                  className="w-full p-2.5 text-xs rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 font-semibold"
+                  className="w-full p-2.5 text-xs rounded border border-zinc-300 bg-zinc-100 text-zinc-900 font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
               </div>
 
